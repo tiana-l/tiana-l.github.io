@@ -1,13 +1,59 @@
-html{
-    margin:0;
-    padding:0;
-}
 body{
     font-family:'PT Mono', monospace;
     text-align:center;
     background-color:rgb(168, 249, 255);
+    margin:0;
+    padding:0;
+}
+.openbtn{
+    position:absolute;
+    top:0;
+    right:1vw;
+    font-size:32px;
+    z-index:1;
+}
+.closebtn{
+    position:absolute;
+    top:0;
+    right:0vw;
+    line-height: 48px;
+    font-size:64px;
+    z-index:1;
+    text-align:right;
+}
+.smallNav{
+    display:block;
+    position:fixed;
+    width:100vw;
+    padding-top:3vh;
+    padding-bottom:80vh;
+    text-align:center;
+    color:#551a8b;
+    background-color:rgb(255, 174, 0);
+}
+.smallNav div{
+    position:relative;
+    display:block;
+    margin:1vw;
+    padding-top:3vh;
+    padding-bottom:3vh;
+}
+.medNav{
+    display:block;
+    position:fixed;
+    width:100vw;
+    text-align:center;
+    color:#551a8b;
+}
+.medNav div{
+    position:relative;
+    display:inline-block;
+    margin:1vw;
+    padding-top:3vh;
+    padding-bottom:3vh;
 }
 nav{
+    display:block;
     position:fixed;
     width:86vw;
     text-align:right;
@@ -35,7 +81,7 @@ h1{
     font-size:20vw;
     margin:0;
     padding-top:13vh;
-    text-shadow: 5px 5px rgb(255, 174, 0);
+    text-shadow: .5vw .5vw rgb(255, 174, 0);
 }
 h2{
     -webkit-text-fill-color:rgb(255, 174, 0);
@@ -59,6 +105,14 @@ h3{
     margin:auto;
     margin-top:10vh;
 }
-
+/* phone */
+@media screen and (max-width:479px){
+}
+/* medium tablets */
+@media screen and (max-width:767px){
+}
+/* desktop */
+@media screen and (max-width:991px){
+}
 
 
