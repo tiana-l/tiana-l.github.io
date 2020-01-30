@@ -4,9 +4,12 @@ body{
 }
 h2{
     font-weight: 100;
+    padding-top:5vh;
+    text-decoration: underline;
 }
 ul{
     list-style-type: none;
+    padding:0;
 }
 
 .container{
