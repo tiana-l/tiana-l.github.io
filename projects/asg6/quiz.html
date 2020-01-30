@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Quiz</title>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="quiz.php">
+            <label>First name: <input type="text" name="fname" id="fname" required></label>
+            <label>Last name: <input type="text" name="lname" id="lname" required></label>
+            <br/>
+            <label><h2>Q1. What is the color of chocolate?</h2>
+                <br/>
+                a. brown<input type="radio" name="q1" value="brown">
+                b. white<input type="radio" name="q1" value="white">
+                c. green<input type="radio" name="q1" value="green">
+                d. multiple answers<input type="radio" name="q1" value="multiple">
+            </label>
+            <br/>
+            <label><h2>Q2. Is water wet?</h2>
+                <br/>
+                a. yes<input type="radio" name="q2" value="yes">
+                b. no<input type="radio" name="q2" value="no">
+                c. debatable<input type="radio" name="q2" value="debatable">
+                d. I don't have a clue<input type="radio" name="q2" value="idk">
+            </label>
+            <br/>
+            <label><h2>Q3. Who wrote Transcendental Etude No. 5, "Feux Follets"?</h2>
+                <br/>
+                a. Frederic Chopin<input type="radio" name="q3" value="chopin">
+                b. Wolfgang Amadeus Mozart<input type="radio" name="q3" value="mozart">
+                c. Sergei Rachmaninov<input type="radio" name="q3" value="rachmaninov">
+                d. Franz Liszt<input type="radio" name="q3" value="liszt">
+            </label>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
+<script type='text/javascript' src='https://code.jquery.com/jquery-3.4.1.min.js'>
+    $().ready(function(){
+        $('body').hide().delay(200).fadeIn("fast");
+    });
+</script>

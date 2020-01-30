@@ -1,0 +1,19 @@
+body{
+    text-align:center;
+    font-family: "PT Mono", monospace;
+}
+h2{
+    font-weight: 100;
+}
+ul{
+    list-style-type: none;
+}
+
+.container{
+    grid-template-columns:repeat(auto-fit,300px);
+    grid-template-rows:repeat(3,300px);
+    grid-gap:1rem;
+}
+.container > div{
+    background:#EDE7F6;
+}

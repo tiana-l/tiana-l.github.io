@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="block1">
+            <h2>Display Random Image</h2>
+            <div id="frame1"><img src=""></div>
+        </div>
+        <div class="block2">
+            <h2>Slide Show</h2>
+            <div id="frame2">
+                <img src="media/404error.jpeg">
+            </div>
+            <button type="button" onclick=back()><</button>
+            <button type="button" onclick=start()>start</button>
+            <button type="button" onclick=stop()>stop</button>
+            <button type="button" onclick=forward()>></button>
+        </div>
+        <div class="block3">
+            <h2>Simple Crap Game</h2>
+            <p>How to play:</p>
+            <p>First enter bet amount. Then, click on the roll button to roll 2 die. If the sum of the dice is 7 or 11, you win. If the sum of the dice is 2, 3, or 12, you lose.</p>
+            <form name="crapGame">
+                <p>Enter bid amount: 
+                    <input id="bid" type="number" min="1.00">
+                    <button type="button" onclick=roll()>Roll</button>
+                </p>
+                <div><img id="die1" src="media/d1.png"><h3>die 1 : <span id="d1Result"></span></h3></div>
+                <div><img id="die2" src="media/d1.png"><h3>die 2 : <span id="d2Result"></span></h3></div>
+                <div id="result"></div>
+            </form>
+            <button type="button" onclick=showHistory()>See Bidding History</button>
+            <div id="history">
+                <table id="chart">
+                    <tr>
+                        <th>Roll Result</th>
+                        <th>Win/Lose</th>
+                        <th>Amt Won/Lost</th>
+                    </tr>
+                </table>
+                <div><button type="button" onclick=clearHistory()>Clear History</button></div>
+            </div>
+            <div><button type="button" onclick=resetD()>Reset Dice</button></div>
+        </div>
+        <div class="block4">
+            <h2>Nyu Holiday Calendar</h2>
+            <form>
+                <input id="dateInput" type="date" onchange=holiday() style="text-align:right;">
+            </form>
+            <p id="output"></p>
+            <div id="holidayPic"><img src=""></div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="slideShowApp.js"></script>
+<script type="text/javascript" src="randomImageApp.js"></script>
+<script type="text/javascript" src="crapGame.js"></script>
+<script type="text/javascript" src="holiday.js"></script>
+
+<!-- 
+    - button or input type button automatically reloads page if you don't specify the type="button"
+    bc the default type of a button is submit, which submits the form 
+    https://stackoverflow.com/questions/40839715/avoid-reload-page-after-innerhtml-update-with-function-call
+   - when using document.forms.elements[i], if there are nonform elements inside the form div ie. p tag
+   do not count those in the index i when referencing form.elements
+   https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+   https://www.fontsquirrel.com/tools/webfont-generator
+   For web browser
+   I had trouble updating my picture thanksgiving.webp to thanksgiving.jpg
+   This is because the chrome browser must have cached a previous version and kept feeding me that version thinking it was the same thing
+   bc my files had the same name just different content, but chrome ignored the difference
+   so I had to clear my history in the last hour in order for my page to run properly on the web
+ -->

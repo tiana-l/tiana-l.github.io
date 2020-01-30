@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <nav></nav>
+        <header><h2>Style</h2></header>
+        <section>
+            <h3>Control the style of this webpage!</h3>
+            <p>List of recommended font families:
+                helvetica, courier, palatino
+            </p>
+            <div class="fontFamilyControls">
+                <label>
+                    <p>*Note: font family will only change if input is a valid font family.</p>
+                    <p>Type your desired font family:</p>
+                    <input id="fontFamily" type="text">
+                </label>
+            </div>
+            <div class="fontWeightControls">
+                <label>
+                    <p title="not applicable in every instance">Font Weight:</p>
+                    <input id="fontWeight" type="range" min=100 max=900 step=100>
+                </label>
+            </div>
+            <p>Alignment:</p>
+            <div class="alignmentControls"> 
+                <div id="left"><button onclick="left()">Left</button></div>
+                <div id="center"><button onclick="center()">Center</button></div>
+                <div id="right"><button onclick="right()">Right</button></label></div>
+                
+            </div>
+            <div class="bgColorControls">
+                <label><p>Background Color</p>
+                        <input id="bgColor"type="color">
+                </label>
+            </div>
+            <div class="textColorControls">
+                <label><p>Text Color</p>
+                    <input id="textColor"type="color">
+                </label>
+            </div>
+            <br/>
+            <button onclick="apple()">Recommended Style</button>
+        </section>
+        <section>
+            <h2>Prize</h2>
+            <h3>Win a random prize!</h3>
+            <div id="prize">
+                <p>List of Prizes available: </p>
+                <p id="listPrizes"></p>
+                <button id="winAPrize" onclick=getPrize()>Win a Prize</button>
+                <p id="prizeResult"></p>
+            </div>
+        </section>
+        <section>
+            <h2>Swap Text Application</h2>
+            <h3>Swap the text below.</h3>
+            <p id="p1" onclick="swapT()"></p>
+            <p id="p2" onclick="swapT()"></p>
+        </section>
+
+        <h2>Swap Image Application</h2>
+        <h3>Swap the images below.</h3>
+        <div id="imgFrame1"><img id="img1" onclick="swapI()" src="media/scream.jpg"></div>
+        <div id="imgFrame2"><img id="img2" onclick="swapI()" src="media/champagne.jpg"></div>
+
+        <h2>Generate New Document Application</h2>
+        <div id="newDocFrame"><img id="newDocImage" onclick="newDoc()" src="media/relativity.jpg"></div>
+
+        <h2>Simple Converter Application</h2>
+        <h3>Convert feet to miles!</h3>
+        <form method="post">
+            <p>Feet:</p>
+            <label id="converter">
+                <input id="feet"type="text">
+            </label>
+            <p>Result:</p>
+            <text-area id="convertResult" rows="1" cols="30"></text-area>
+        </form>
+    </body>
+</html>
+<script src="asg2.js" charset="utf-8"></script>

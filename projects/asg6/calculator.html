@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <form method="GET" action="add.php">
+            <label>Enter first number: <input type="text" name="n1"></label>
+            <label>+ <input type="radio" value="+" name="op" id="plus"></label>
+            <label>- <input type="radio" value="-" name="op" id="minus"></label>
+            <label>* <input type="radio" value="*" name="op" id="times"></label>
+            <label>/ <input type="radio" value="/" name="op" id="divide"></label>
+            <label>Enter second number: <input type="text" name="n2"></label>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
+<script type='text/javascript' src='https://code.jquery.com/jquery-3.4.1.min.js'>
+    $().ready(function(){
+        $('body').hide().delay(200).fadeIn("fast");
+    });
+</script>

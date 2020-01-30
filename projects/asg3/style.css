@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('webfontkit/lemonmilk/lemonmilk-webfont.woff2') format('woff2'),
+         url('webfontkit/lemonmilk/lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lalorgregular';
+    src: url('webfontkit/lalorg/lalorg-webfont.woff2') format('woff2'),
+         url('webfontkit/lalorg/lalorg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:flex-start;
+    background-color:grey;
+}
+body,h1,h2,p,img,input,div{
+    margin:0;
+    padding:0;
+}
+
+.block1,.block2,.block3,.block4{
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
+    text-align:center;
+    padding:0 7vw 7vw 7vw;
+}
+.block1,.block3{
+    background-color:black;
+    color:white;
+}
+.block2,.block4{
+    background-color:white;
+    color:black;
+}
+h1,h2,h3{
+    font-family:'lalorgregular','lemonmilkregular',helvetica;
+}
+h2{
+    font-size:5em;
+    padding:7vw 0;
+}
+h3{
+    font-size:2em;
+}
+p,table,button,input{
+    font-family: 'lemonmilkregular', sans-serif;
+}
+p{
+    text-align:justify;
+}
+table,tr,th{
+    margin:3vw auto;
+}
+#result{
+    margin:0 auto;
+    text-align:center;
+}
+button,input{
+    font-size:1em;
+}
+button{
+    margin:7vw auto 0 auto;
+    border:2px solid black;
+    background-color:white;
+}
+#bid{
+    width:6em;
+}
+input{
+    margin:0 auto 7vw auto;
+    border:2px solid black;
+}
+#frame1,#frame2,#holidayPic{
+    display:flex;
+    justify-content:center;
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    margin:0 auto;
+}
+#holidayPic{
+    margin-bottom:7vw;
+}
+img{
+    display:block;
+    object-fit:cover;
+    height:105%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#history{
+    display:none;
+}
+#dateInput{
+    width:13.5em;
+    text-align:right;
+}
+#output{
+    margin-bottom:7vw;
+}
+@media only screen and (min-width:360px){
+    body{
+        margin-top:1vh;
+        margin-bottom:1vh;
+    }
+
+}
+@media only screen and (min-width:380px){
+    body{
+        margin-top:2vh;
+        margin-bottom:2vh;
+    }
+
+}
+@media only screen and (min-width:400px){
+    body{
+        margin-top:3vh;
+        margin-bottom:3vh;
+    }
+
+}
+@media only screen and (min-width:420px){
+    body{
+        margin-top:4vh;
+        margin-bottom:4vh;
+    }
+
+}
+@media only screen and (min-width:500px){
+    body{
+        margin-top:5vh;
+        margin-bottom:5vh;
+    }
+
+}
+@media only screen and (min-width:520px){
+    body{
+        margin-top:5vh;
+        margin-bottom:5vh;
+    }
+
+}
+@media only screen and (min-width:700px){
+    .block1,.block2,.block3,.block4{
+        margin-bottom:5vw;
+    }
+    body{
+        margin-top:5vh;
+    }
+}
+@media only screen and (min-width:800px){
+    .block1,.block2,.block3,.block4{
+        margin-top:3vh;
+        margin-bottom:5vw;
+        margin-left:5vw;
+        margin-right:5vw;
+    }
+}

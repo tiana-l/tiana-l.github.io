@@ -1,0 +1,18 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Inconsolata', monospace;
+}
+h3{
+    margin:10px;
+}
+p{
+    margin:10px;
+}
+#receipt{
+    margin:20px auto;
+    width:320px;
+    padding:10px;
+    background-color:beige;
+    box-shadow:10px grey;
+}
