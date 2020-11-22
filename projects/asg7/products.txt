@@ -1,3 +1,0 @@
-cat:a cat:50:10
-dog:a dog:10:77
-rock:a rock:100:5
